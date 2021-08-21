@@ -17,7 +17,14 @@ export class CorpoComponent implements OnInit {
   ngOnInit(): void { 
       this.servico.getList().subscribe(dadosRecebidos=>{
           this.lista =  dadosRecebidos['results']       
-          console.log(this.lista);      
+          console.log(this.lista);
+          
+          //inserir aqui a lógica para ordenar os dados
+
+          console.log(this.lista)
+
+          //ordenar os dados
+        
       })
   }
 
