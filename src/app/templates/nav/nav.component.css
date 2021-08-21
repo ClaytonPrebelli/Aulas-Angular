@@ -1,0 +1,14 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .hamburg{
+      margin-right: 15px;
+  }
+  a{
+      text-decoration: none;
+  }
+  .links{
+      text-decoration: none;
+      margin-left: 85px;
+      color:white;
+  }
