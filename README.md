@@ -18,7 +18,7 @@ Já tem um comentário de onde inserir a lógica.
 ## Desafio
 
     Ordenar a lista que recebemos por ordem de media de votos (vote_average)
-    
+
 ## Como ordenar um array
 
 Considere o array
@@ -26,15 +26,15 @@ dados = [3,8,7,1]
 
 Para ordenar ele:
 
-this.dados.sort(function (a,b){
-    if (a > b){
-        return -1;
-    }
-    if (a < b ){
-        return 1;
-    }
-    return 0;
-});
+        this.dados.sort(function (a,b){
+            if (a > b){
+                return -1;
+            }
+            if (a < b ){
+                return 1;
+            }
+            return 0;
+        });
 
 Considere o array de objetos
 dados = [{nome:"Clayton",idade:33},
@@ -42,14 +42,14 @@ dados = [{nome:"Clayton",idade:33},
 
 Use a mesma lógica, mas defina qual critério
 
-this.dados.sort(function (a,b){
-    if (a.idade > b.idade){
-        return -1;
-    }
-    if (a.idade < b.idade){
-        return 1;
-    }
-    return 0;
-});
+        this.dados.sort(function (a,b){
+            if (a.idade > b.idade){
+                return -1;
+            }
+            if (a.idade < b.idade){
+                return 1;
+            }
+            return 0;
+        });
 
 Boa sorte
