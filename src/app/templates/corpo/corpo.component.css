@@ -1,3 +1,11 @@
+* {
+   padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: sans-serif;
+}
 .conteudo{
    width: 100%;
    display: flex;
@@ -7,6 +15,10 @@
    align-items: center;
 }
 .card{
+   background-color: green;
+   box-sizing: border-box;
+   position: relative;
+   object-fit: cover;
    width:30%;
    max-height: 840px;
    min-height: 840px;
@@ -25,19 +37,21 @@
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
-
-  
 }
-
+.informations h3 {
+   font-size: 15px;
+   margin: 10px;
+}
 h3{
    margin-left: 10px;
 }
 .poster{
-   width: 100%;
-   margin-top:50px;
+   width: 80%;
 }
 .title{
    height: 70px;
+   background-color: red;
+   font-size: 30px;
 }
 .subtitle{
    margin-top: 5px;
