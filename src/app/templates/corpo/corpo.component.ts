@@ -19,7 +19,15 @@ export class CorpoComponent implements OnInit {
           this.lista =  dadosRecebidos['results']       
           console.log(this.lista);
           
-          //inserir aqui a lógica para ordenar os dados
+          this.lista.sort(function (a,b){
+            if (a.vote_count > b.vote_count){
+                return -1;
+            }
+            if (a.vote_count < b.vote_count){
+                return 1;
+            }
+            return 0;
+          });
 
           console.log(this.lista)
 
