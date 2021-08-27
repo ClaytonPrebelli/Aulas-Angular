@@ -2,9 +2,10 @@
     <div class="card" *ngFor="let dados of lista">
         <h1 class="title">{{ dados.title }}</h1>
         <h3 class="subtitle">{{dados.original_title}}</h3>
-       <a routerLink="details/{{dados.id}}"><img src="{{url_imagem+dados.poster_path}}" alt="" class="poster"></a>
+       <a routerLink="details/{{dados.id}}"><img src="{{url_imagem+dados.poster_path}}" alt="" class="poster" ></a>
         <div class="informations">
-            <h3>Votos: {{dados.vote_count}}</h3>            
+            <h3>Votos: {{dados.vote_count}}</h3>   
+                    
         </div>
 
     </div>

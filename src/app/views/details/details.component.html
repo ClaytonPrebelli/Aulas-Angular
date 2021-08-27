@@ -5,7 +5,14 @@
         <img src="{{url_imagem+dados_filme.poster_path}}" alt="" class="poster">
     </div>
     <div class="informations">
-        <h1 class="title">{{dados_filme.title}}</h1>
+        <div class="line">
+        <h2 class="legenda">Título Original:</h2>
+        <p class="text">{{dados_filme.original_title}}</p>
+        </div>
+        <div class="line">
+            <h2 class="legenda"><mat-icon aria-hidden="false" aria-label="Example home icon " class="estrela">start</mat-icon>Média de Votos:</h2>
+            <p class="text">{{dados_filme.vote_average}}</p>
+            </div>
     </div>
 </div>
 </div>

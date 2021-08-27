@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #831f1f;
     
-    
+    position:fixed;
     left:0;
     bottom:0;
 }

@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent implements OnInit {
-  public lista!:ListaFilmes[];
+  lista!:ListaFilmes[]
   url_imagem='https://image.tmdb.org/t/p/w500';
-
+  
   constructor(private servico:ConsumoService) { }
 
   ngOnInit(): void { 
@@ -35,6 +35,8 @@ export class CorpoComponent implements OnInit {
         
       })
   }
+
+  
 
 
   }
