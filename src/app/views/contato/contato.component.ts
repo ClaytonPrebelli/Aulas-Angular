@@ -7,10 +7,8 @@ import { Meta } from '@angular/platform-browser';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent implements OnInit {
-
-  constructor(private meta: Meta) { }
-
-  ngOnInit(): void {
+ 
+  constructor(private meta: Meta) { 
     this.meta.addTags([
       { name: 'description', content: 'Contato de teste aulas angular' },
       { name: 'title', content: 'Contato' },
@@ -19,7 +17,13 @@ export class ContatoComponent implements OnInit {
       { name: 'og:description', content: 'Contato de teste aulas angular' },
       { name: 'og:image', content: 'https://image.tmdb.org/t/p/w500/wTS3dS2DJiMFFgqKDz5fxMTri.jpg' },
       { name: 'og:site_name', content: 'Contato da Aplicação' },
+      {meta: "og:image:width", content:"2400"},
+  {meta:"og:image:height", content:"1260"}
     ]);
+  }
+
+  ngOnInit(): void {
+    
   }
 
 }
