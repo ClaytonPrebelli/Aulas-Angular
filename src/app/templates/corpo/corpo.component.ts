@@ -17,14 +17,15 @@ export class CorpoComponent implements OnInit {
     this.meta.addTags([
       { name: 'description', content: 'Aplicação angular feita em aulas' },
       { name: 'title', content: 'Aulas Angular' },
-      { name: 'keywords', content: 'angular, javascript, typescript, meta, seo' } ,
-      { name: 'og:title', content: 'Aulas angular' },
-      { name: 'og:description', content: 'Aplicação angular feita em aulas' },
-      { name: 'og:image', content: 'https://image.tmdb.org/t/p/w500/9E76j2DcQv8LdbX1Wa9jpbDBfw1.jpg' },
-      {name:"og:image:type", content:"image/png"},
-      { name: 'og:site_name', content: 'Aulas Angular' },
-      {name: "og:image:width", content:"2400"},
-  {name:"og:image:height", content:"1260"},
+      {property:"og:url", content:"https://aulas-angular.vercel.app/"},
+      { property: 'keywords', content: 'angular, javascript, typescript, meta, seo' } ,
+      { property: 'og:title', content: 'Aulas angular' },
+      { property: 'og:description', content: 'Aplicação angular feita em aulas' },
+      { property: 'og:image', content: 'https://image.tmdb.org/t/p/w500/9E76j2DcQv8LdbX1Wa9jpbDBfw1.jpg' },
+      {property:"og:image:type", content:"image/png"},
+      { property: 'og:site_name', content: 'Aulas Angular' },
+      {property: "og:image:width", content:"2400"},
+  {property:"og:image:height", content:"1260"},
     ]);
   }
 
