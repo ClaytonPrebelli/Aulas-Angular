@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contato',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: Meta) { }
 
   ngOnInit(): void {
+    this.meta.addTags([
+      { name: 'description', content: 'Contato de teste aulas angular' },
+      { name: 'title', content: 'Contato' },
+      { name: 'keywords', content: 'angular, javascript, typescript, meta, seo' }  
+    ]);
   }
 
 }
