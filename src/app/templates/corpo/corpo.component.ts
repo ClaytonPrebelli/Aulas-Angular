@@ -1,3 +1,4 @@
+import { Meta } from '@angular/platform-browser';
 import { environment } from './../../../environments/environment.prod';
 import { ConsumoService } from './../../consumo.service';
 import { ListaFilmes } from './corpo.model';
@@ -12,7 +13,20 @@ export class CorpoComponent implements OnInit {
   lista!:ListaFilmes[]
   url_imagem='https://image.tmdb.org/t/p/w500';
   
-  constructor(private servico:ConsumoService) { }
+  constructor(private servico:ConsumoService, private meta:Meta) { 
+    this.meta.addTags([
+      { name: 'description', content: 'Aplicação angular feita em aulas' },
+      { name: 'title', content: 'Aulas Angular' },
+      { name: 'keywords', content: 'angular, javascript, typescript, meta, seo' } ,
+      { name: 'og:title', content: 'Aulas angular' },
+      { name: 'og:description', content: 'Aplicação angular feita em aulas' },
+      { name: 'og:image', content: 'https://image.tmdb.org/t/p/w500/9E76j2DcQv8LdbX1Wa9jpbDBfw1.jpg' },
+      {name:"og:image:type", content:"image/png"},
+      { name: 'og:site_name', content: 'Aulas Angular' },
+      {name: "og:image:width", content:"2400"},
+  {name:"og:image:height", content:"1260"},
+    ]);
+  }
 
   ngOnInit(): void { 
       this.servico.getList().subscribe(dadosRecebidos=>{
