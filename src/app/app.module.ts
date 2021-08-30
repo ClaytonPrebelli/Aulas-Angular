@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule,Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './templates/nav/nav.component';
@@ -31,7 +31,7 @@ import { DetailsComponent } from './views/details/details.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,7 @@
 import { ConsumoService } from './../../consumo.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Meta, MetaDefinition } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-details',

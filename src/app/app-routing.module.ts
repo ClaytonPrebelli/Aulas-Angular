@@ -7,10 +7,22 @@ import { Routes,RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: "",
-    component: CorpoComponent
+    component: CorpoComponent,
+    data:{
+      ogTitle:"Aplicação Angular de filmes",
+      ogDescription:"Aplicação feita para conhecer o angular",
+      keywords:['Angular'],
+      ogUrl:"https://vercel.com/claytonprebelli/aulas-angular",
+          }
   },{
     path: "contato",
-    component: ContatoComponent
+    component: ContatoComponent,
+    data:{
+      ogTitle:"Contato",
+      ogDescription:"Contato com os desenvolvedores",
+      keywords:['Angular'],
+      ogUrl:"https://vercel.com/claytonprebelli/aulas-angular/contato",
+          }
   },
   {
     path:"details/:id",
