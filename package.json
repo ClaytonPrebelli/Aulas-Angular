@@ -1,6 +1,9 @@
 {
   "name": "meu-angular",
   "version": "0.0.0",
+  "engines":{
+    "node:":"17,17,1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
