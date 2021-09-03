@@ -7,9 +7,9 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng build && ng run meu-angular:server",
-    "build": "ng build && ng run meu-angular:server",
-    "watch": "ng build --watch --configuration development",
+    "start": "node dist/meu-angular/server/main.js",
+    "build": "node dist/meu-angular/server/main.js",
+    "watch": "node dist/meu-angular/server/main.js",
     "test": "ng test",
     "dev:ssr": "ng run meu-angular:serve-ssr",
     "serve:ssr": "node dist/meu-angular/server/main.js",
