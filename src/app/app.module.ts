@@ -24,7 +24,7 @@ import { DetailsComponent } from './views/details/details.component';
     DetailsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
