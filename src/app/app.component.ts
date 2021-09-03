@@ -26,12 +26,12 @@ export class AppComponent implements OnInit {
  
         var rt = this.getChild(this.activatedRoute)
  
-        rt.data.subscribe((data: { title: string; descrption: any; robots: any; ogUrl: any; ogTitle: any; ogDescription: any; ogImage: any; }) => {
+        rt.data.subscribe((data: { title: string; description: any; robots: any; ogUrl: any; ogTitle: any; ogDescription: any; ogImage: any; }) => {
           console.log(data);
           this.titleService.setTitle(data.title)
  
-          if (data.descrption) {
-            this.metaService.updateTag({ name: 'description', content: data.descrption })
+          if (data.description) {
+            this.metaService.updateTag({ name: 'description', content: data.description })
           } /*else {
             this.metaService.removeTag("name='description'")
           }*/

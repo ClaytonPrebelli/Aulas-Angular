@@ -9,18 +9,20 @@ const routes: Routes = [
     path: "",
     component: CorpoComponent,
     data:{
+      description:"paçocaprebelli",
       ogTitle:"Aplicação Angular de filmes",
-      ogDescription:"Aplicação feita para conhecer o angular",
-      keywords:['Angular'],
+      ogDescription:"PaçocaPrebelli",
+      keywords:['paçocaprebelli'],
       ogUrl:"https://vercel.com/claytonprebelli/aulas-angular",
           }
   },{
     path: "contato",
     component: ContatoComponent,
     data:{
+      description:"contato da paçoca prebelli",
       ogTitle:"Contato",
       ogDescription:"Contato com os desenvolvedores",
-      keywords:['Angular'],
+      keywords:['paçocaAngular'],
       ogUrl:"https://vercel.com/claytonprebelli/aulas-angular/contato",
           }
   },
