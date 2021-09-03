@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng build && ng run meu-angular:server",
-    "build": "ng build && ng run meu-angular:serverng build",
+    "build": "ng build && ng run meu-angular:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run meu-angular:serve-ssr",
